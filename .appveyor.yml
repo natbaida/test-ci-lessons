@@ -1,0 +1,20 @@
+image: Ubuntu2204  # или Ubuntu2004
+
+environment:
+  nodejs_version: "20"  # LTS версия, или "18", "current"
+
+branches:
+  only:
+    - master
+    - main  # современные репозитории используют main
+
+cache:
+  - node_modules
+
+install:
+  - npm install
+
+build: off
+
+test_script:
+  - npm run lint && npm test
