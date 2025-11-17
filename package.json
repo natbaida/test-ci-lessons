@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
@@ -14,9 +15,10 @@
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
+    "babel-jest": "^30.0.0",
     "eslint": "^9.39.1",
-    "jest": "^30.2.0",
-    "babel-jest": "^30.0.0"
+    "husky": "^9.1.7",
+    "jest": "^30.2.0"
   },
   "dependencies": {
     "core-js": "^3.46.0"
